@@ -10,8 +10,18 @@ $(call inherit-product, device/xiaomi/sm6250-common/common.mk)
 # Inherit proprietary targets
 $(call inherit-product-if-exists, vendor/xiaomi/miatoll/miatoll-vendor.mk)
 
+# Hardware
+PRODUCT_BOARD_PLATFORM := atoll
+PRODUCT_USES_QCOM_HARDWARE := true
+
+# HALS
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sm8150/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sm8150/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sm8150/media
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom-caf/sm8150 \
     $(LOCAL_PATH)
 
 # Init scripts
