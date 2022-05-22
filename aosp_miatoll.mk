@@ -27,6 +27,9 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Set this flag in build script
 ifeq ($(CURRENT_BUILD_TYPE), gapps)
 # Use Gapps
