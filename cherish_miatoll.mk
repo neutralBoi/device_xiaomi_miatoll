@@ -32,6 +32,9 @@ CHERISH_BUILD_TYPE := OFFICIAL
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.cherish.maintainer=Vedant(NeutralBoi)
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Set this flag in build script
 ifeq ($(CURRENT_BUILD_TYPE), gapps)
 # Use Gapps
